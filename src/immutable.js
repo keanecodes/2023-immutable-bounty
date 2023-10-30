@@ -2,8 +2,8 @@ import { config, passport } from "@imtbl/sdk";
 
 const passportConfig = {
   clientId: import.meta.env.VITE_IMMUTABLE_CLIENT_ID ?? "YOUR_CLIENT_ID",
-  redirectUri: "http://localhost:5003/callback",
-  logoutRedirectUri: "http://localhost:5003/",
+  redirectUri: `${import.meta.env.VITE_BASE_URL ?? "http://localhost:5003"}/callback`,
+  logoutRedirectUri: import.meta.env.VITE_BASE_URL ?? "http://localhost:5003",
   scope: "transact openid offline_access email",
   audience: "platform_api",
 
