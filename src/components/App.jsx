@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router';
 import { passportInstance } from "../immutable";
+import "./App.css"
 
 export default function App () {
   const [user, setUser] = useState(undefined);
@@ -15,11 +16,11 @@ export default function App () {
       Boolean(userProfile === undefined) && navigate("/")
 
       setUser({
-        sub: userProfile?.sub,
-        email: userProfile?.email,
-        nickname: userProfile?.nickname,
+        Nickname: userProfile?.nickname,
+        Email: userProfile?.email,
         accessToken: accessToken,
         idToken: idToken,
+        sub: userProfile?.sub,
       });
     } catch (error) {
       console.log(error);
@@ -28,17 +29,38 @@ export default function App () {
 
   useEffect(() => {
     fetchUser();
+    console.log(user)
   }, []);
 
   return(
-    <>
-      <div>Hello {user?.email}</div>
-      <button onClick={() => {
-        passportInstance.logout()
-        navigate("/")
-      }}>
-        Logout
+    <div className='card'>
+      <div className='hi-header'>
+        <h1>Hello {user?.nickname ?? 'there'} 👋 </h1>
+        <a onClick={() => {
+          passportInstance.logout()
+          navigate("/")
+        }}>Logout</a> 
+      </div>
+      {
+        Boolean(user) && Object.keys(user).map(key => 
+          <div className="text-box-wrapper">
+            <div className="text-box disable">
+              <input type="text" name="" value={user[key] ?? ''} placeholder="No nickname set"/>
+              <label>{key}</label>
+            </div>
+            {Boolean(key === "accessToken" || key === "idToken") && <a>Copy</a>}
+          </div>
+        )
+      }
+      <div className="text-box-wrapper">
+        <div className="text-box">
+          <input type="text" name="" placeholder="Type your message here"/>
+          <label>Save any message to blockchain 🚀🚀🚀</label>
+        </div>
+      </div>
+      <button onClick={() => {}}>
+        Initiate transaction
       </button>
-    </>
+    </div>
    )
 }

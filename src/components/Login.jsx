@@ -15,8 +15,8 @@ function Login() {
   }, [])
   return (
     <>
-      <h1>Immutable Passport Sample</h1>
       <div className="card">
+        <h1>Immutable Passport Sample</h1>
         <button 
           disabled={loading}
           onClick={async () => {
@@ -24,6 +24,10 @@ function Login() {
             await fetchAuth();
             setLoading(false);
           }}>
+            <span/>
+            <span/>
+            <span/>
+            <span/>
           {loading ? "Loading..." : "Login"}
         </button>
       </div>
