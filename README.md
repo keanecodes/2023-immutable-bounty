@@ -26,7 +26,7 @@ Sign in or create an account.
 Create a new project and register your application.
 Note down your API keys and client ID for later use. Your end result should look like this:
 
-
+![Screenshot 2023-10-31 at 3 36 41 AM](https://github.com/keanecodes/2023-immutable-bounty-2/assets/22881005/360716b7-8f37-4750-be34-7ae90e3381ab)
 
 ### 2. Creating a Simple Application
 You can clone this repo and enter the directory
