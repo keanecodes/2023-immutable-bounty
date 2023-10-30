@@ -1,6 +1,6 @@
 # Immutable Passport Integration Guide
 
-This guide will walk you through the process of integrating Immutable Passport into your application. Immutable Passport is a powerful tool for blockchain-based authentication and transactions. 
+This guide will walk you through the process of integrating Immutable Passport into your application. It is also a bounty with stackup, which can be found [here](https://app.stackup.dev/bounty/immutable-bounty-2-immutable-passport-integration).
 
 
 
@@ -19,12 +19,14 @@ Before you begin, make sure you have the following:
 ## Getting Started
 
 ### 1. Registering the Application on Immutable Developer Hub
-To use Immutable Passport, you need to register your application on the Immutable Developer Hub. Follow these steps:
+To use Immutable Passport, you need to register your application on the Immutable Developer Hub. You can check [this guide for more pictured steps](https://app.stackup.dev/bounty/immutable-bounty-2-immutable-passport-integration) or follow these steps below:
 
 Go to [Immutable Developer Hub](https://hub.immutable.com/).
 Sign in or create an account.
 Create a new project and register your application.
-Note down your API keys and client ID for later use.
+Note down your API keys and client ID for later use. Your end result should look like this:
+
+
 
 ### 2. Creating a Simple Application
 You can clone this repo and enter the directory
