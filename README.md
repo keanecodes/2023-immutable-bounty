@@ -1,6 +1,14 @@
 # Immutable Passport Integration Guide
 
-This guide will walk you through the process of integrating Immutable Passport into your application. Immutable Passport is a powerful tool for blockchain-based authentication and transactions. Credits to [this CodePen](https://codepen.io/soufiane-khalfaoui-hassani/pen/LYpPWda) for the cool styles 💅
+This guide will walk you through the process of integrating Immutable Passport into your application. Immutable Passport is a powerful tool for blockchain-based authentication and transactions. 
+
+
+
+https://github.com/keanecodes/2023-immutable-bounty-2/assets/22881005/ac7d677f-312b-497c-aa93-15c408d711a6
+
+
+
+Credits to [this CodePen](https://codepen.io/soufiane-khalfaoui-hassani/pen/LYpPWda) for the cool styles 💅
 
 ## Prerequisites
 Before you begin, make sure you have the following:
