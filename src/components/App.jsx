@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router';
 import { passportInstance } from "../immutable";
 import "./App.css"
+import Transaction from './Transaction';
 
 export default function App () {
   const [user, setUser] = useState(undefined);
@@ -29,7 +30,6 @@ export default function App () {
 
   useEffect(() => {
     fetchUser();
-    console.log(user)
   }, []);
 
   return(
@@ -42,25 +42,23 @@ export default function App () {
         }}>Logout</a> 
       </div>
       {
-        Boolean(user) && Object.keys(user).map(key => 
-          <div className="text-box-wrapper">
+        Boolean(user) && Object.keys(user).map((key, i) => 
+          <div className="text-box-wrapper" key={i}>
             <div className="text-box disable">
-              <input type="text" name="" value={user[key] ?? ''} placeholder="No nickname set"/>
+              <input type="text" defaultValue={user[key] ?? ''} placeholder="No nickname set"/>
               <label>{key}</label>
             </div>
-            {Boolean(key === "accessToken" || key === "idToken") && <a>Copy</a>}
+            {Boolean(key === "accessToken" || key === "idToken") && 
+              <a onClick={() => {
+                const txt = user[key] ?? ''
+                navigator.clipboard.writeText(txt)
+                console.log(txt)
+              }}>Copy</a>
+            }
           </div>
         )
       }
-      <div className="text-box-wrapper">
-        <div className="text-box">
-          <input type="text" name="" placeholder="Type your message here"/>
-          <label>Save any message to blockchain 🚀🚀🚀</label>
-        </div>
-      </div>
-      <button onClick={() => {}}>
-        Initiate transaction
-      </button>
+      <Transaction/>
     </div>
    )
 }
