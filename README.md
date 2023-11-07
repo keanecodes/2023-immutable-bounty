@@ -4,7 +4,11 @@ This guide will walk you through the process of integrating Immutable Passport i
 
 
 
-https://github.com/keanecodes/2023-immutable-bounty-2/assets/22881005/ac7d677f-312b-497c-aa93-15c408d711a6
+
+https://github.com/keanecodes/2023-immutable-bounty-2/assets/22881005/891a4e6d-5cf6-4381-9add-37e8884426ed
+
+
+
 
 Link in video: https://keanecodes-imx-passport-stackup-bounty.vercel.app/
 
@@ -30,7 +34,8 @@ To use Immutable Passport, you need to register your application on the Immutabl
 
 Your end result should look like this:
 
-![Screenshot 2023-10-31 at 3 36 41 AM](https://github.com/keanecodes/2023-immutable-bounty-2/assets/22881005/360716b7-8f37-4750-be34-7ae90e3381ab)
+![Screenshot 2023-10-31 at 3 36 41 AM](https://github.com/keanecodes/2023-immutable-bounty-2/assets/22881005/d75a7192-3186-41ac-a7c5-3c04c5d98dc3)
+
 
 ### 2. Creating a Simple Application
 You can clone this repo and enter the directory
