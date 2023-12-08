@@ -222,5 +222,5 @@ async function initiateTransaction() {
 Read more [eth_sendTransaction](https://docs.immutable.com/docs/zkEVM/products/passport/wallet/rpc-methods/eth_sendTransaction) and other RPC methods.
 
 ## Conclusion
-You've now successfully integrated Immutable Passport into your application. Feel free to explore more features and options available in the Immutable Passport documentation or fork this project to tailor to your game needs. If you'd like to see how I take this Immutable Passport integration further, checkout [my other Immutable x Stackup bounty]([url](https://github.com/keanecodes/2023-immutable-bounty-3)https://github.com/keanecodes/2023-immutable-bounty-3).
+You've now successfully integrated Immutable Passport into your application. Feel free to explore more features and options available in the Immutable Passport documentation or fork this project to tailor to your game needs. If you'd like to see how I take this Immutable Passport integration further, checkout [my other Immutable x Stackup bounty](https://github.com/keanecodes/2023-immutable-bounty-3).
 
